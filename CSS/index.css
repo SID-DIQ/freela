@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&family=Tiro+Tamil&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans Condensed', 'Tiro Tamil', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+#mainimg {
+    /* padding-top: 10px; */
+    /* padding-left: 50px; */
+    border-radius: 2px;
+    border: 2px solid blue;
+    width: 1536px;
+    height: 215px;
+}
+
+header {
+    background-color: rgb(5, 115, 215);
+    color: #fff;
+}
+
+.menu-bar {
+    text-align: center;
+    height: 50px;
+}
+
+.menu-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-bar ul li {
+    position: relative;
+    padding-top: 10px;
+    width: 15%;
+}
+
+.menu-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-bar ul li:hover {
+    /* padding-left: 2%; */
+    border-bottom: 2px solid #000;
+}
+
+.sub-menu1,
+.sub-menu2,
+.sub-menu3,
+.sub-menu4,
+.sub-menu5 {
+    display: none;
+    position: absolute;
+    padding-left: 10px;
+    background-color: rgb(5, 115, 215);
+    margin-top: 20px;
+    margin-left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    visibility: hidden;
+    /* width: 120%; */
+}
+
+.menu-bar ul li:hover .sub-menu1,
+.menu-bar ul li:hover .sub-menu2,
+.menu-bar ul li:hover .sub-menu3,
+.menu-bar ul li:hover .sub-menu4,
+.menu-bar ul li:hover .sub-menu5 {
+    display: flex; /* Updated to flex to allow flex-direction */
+    flex-direction: column;
+    opacity: 10;
+    visibility: visible;
+    transition-delay: 0.2s; 
+    /* width: 120%; */
+}
+
+.menu-bar ul li:hover .sub-menu1 a,
+.menu-bar ul li:hover .sub-menu2 a,
+.menu-bar ul li:hover .sub-menu3 a,
+.menu-bar ul li:hover .sub-menu4 a,
+.menu-bar ul li:hover .sub-menu5 a {
+    padding: 30px;
+    width: 100%; 
+}
+
+.menu-bar ul li:hover .sub-menu1 ul,
+.menu-bar ul li:hover .sub-menu2 ul,
+.menu-bar ul li:hover .sub-menu3 ul,
+.menu-bar ul li:hover .sub-menu4 ul,
+.menu-bar ul li:hover .sub-menu5 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fa-solid  {
+    padding-left: 5px;
+}

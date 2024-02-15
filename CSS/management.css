@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans Condensed', 'Tiro Tamil', sans-serif;
+}
+
+.flex {
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    position: relative;
+}
+
+
+.mhov:hover {
+    border-bottom:2px solid #333;
+    color: #0056b3; 
+    margin-right: 70%;
+}
+

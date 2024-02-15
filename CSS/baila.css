@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600&family=Tiro+Tamil&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans Condensed', 'Tiro Tamil', sans-serif;
+    
+}
+.centre {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10px;
+}
+.padding{
+    padding-top: 3px;
+    padding-left: 50px;
+    padding-bottom: 4px;
+}
+.margin {
+    text-align: justify;
+    margin-right: 40%;
+    padding-left: 50px;
+}
